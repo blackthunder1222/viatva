@@ -3,47 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front Page</title>
+    <title>VIRVR</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <header>
-    <img src="logo.png" alt="VIRVR" class="logo">
-    <div class="menu-icon">☰</div>
-    <ul class="nav-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Groups</a></li>
-        <li><a href="#">Settings</a></li>
-    </ul>
-</header>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="VIRVR" class="logo">
+        </div>
+        <div class="menu-icon">☰</div>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </header>
 
-<div class="search-section">
-    <input type="text" class="search-input" placeholder="Search...">
-    <button class="search-button">Search</button>
-</div>
+    <div class="search-section">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button">Search</button>
+    </div>
 
-<div class="location-section">
-    <input type="text" class="location-input" placeholder="Enter Location...">
-    <button class="location-button">Set Location</button>
-</div>
+    <div class="location-section">
+        <input type="text" class="location-input" placeholder="Enter Location...">
+        <button class="location-button">Set Location</button>
+    </div>
 
-<div class="signin-section">
-    <h2 class="signin-heading">Sign In</h2>
-    <input type="email" class="signin-input" placeholder="Email">
-    <input type="password" class="signin-input" placeholder="Password">
-    <button class="signin-button">Sign In</button>
-</div>
+    <div class="signin-section">
+        <h2 class="signin-heading">Sign In</h2>
+        <input type="email" class="signin-input" placeholder="Email">
+        <input type="password" class="signin-input" placeholder="Password">
+        <button class="signin-button">Sign In</button>
+    </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuIcon = document.querySelector('.menu-icon');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        menuIcon.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
         });
-    });
     </script>
 </body>
 </html>
