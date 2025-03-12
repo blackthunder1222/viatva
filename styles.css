@@ -3,24 +3,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #000;
+    color: white;
 }
 
 /* Header */
 header {
     position: relative;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    background-color: #111;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-/* Menu and logo container */
-.menu-logo {
+/* Container for Menu & Logo */
+.menu-container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 /* Hamburger menu */
@@ -30,27 +31,29 @@ header {
     padding: 10px;
     margin-right: 10px;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
+    color: white;
 }
 
 /* Logo */
 .logo {
     height: 40px;
     width: auto;
-    margin-left: 50px; /* Push the logo slightly right */
+    margin-left: 50px;
 }
 
-/* Dropdown Menu (Hidden by Default) */
+/* Dropdown Menu - Hidden by Default */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 50px;
     left: 10px;
-    background-color: #333;
+    background-color: #222;
     width: 160px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
 }
 
 .dropdown-menu ul {
@@ -60,7 +63,7 @@ header {
 }
 
 .dropdown-menu ul li {
-    padding: 12px;
+    padding: 10px 15px;
     text-align: left;
 }
 
@@ -71,7 +74,7 @@ header {
 }
 
 .dropdown-menu ul li:hover {
-    background-color: #444;
+    background-color: #333;
 }
 
 /* Show dropdown when active */
@@ -97,4 +100,5 @@ header {
         width: 140px;
     }
 }
+
 
