@@ -62,8 +62,8 @@ input {
     margin-top: 20px;
 }
 .logo {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
     display: block;
     margin: 0 auto 10px; /* Center the logo */
 }
