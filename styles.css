@@ -6,22 +6,15 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* Menu and logo container */
@@ -34,17 +27,21 @@ header {
 .menu-icon {
     font-size: 24px;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     margin-right: 10px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
 
 /* Logo */
 .logo {
     height: 40px;
     width: auto;
+    margin-left: 50px; /* Push the logo slightly right */
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu (Hidden by Default) */
 .dropdown-menu {
     display: none;
     position: absolute;
