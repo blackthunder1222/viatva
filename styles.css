@@ -5,100 +5,136 @@ body {
     padding: 0;
     background-color: #000;
     color: white;
+    text-align: center;
 }
 
-/* Header */
+/* Header and logo */
 header {
     position: relative;
-    background-color: #111;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    padding: 15px 0;
 }
 
-/* Container for Menu & Logo */
-.menu-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* Hamburger menu */
-.menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-    margin-right: 10px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-}
-
-/* Logo */
 .logo {
-    height: 40px;
+    height: 60px;
     width: auto;
-    margin-left: 50px;
+    margin: 0 auto;
+    display: block;
 }
 
-/* Dropdown Menu - Hidden by Default */
-.dropdown-menu {
-    display: none;
+/* Hamburger menu icon */
+.menu-icon {
     position: absolute;
-    top: 50px;
-    left: 10px;
-    background-color: #222;
-    width: 160px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-    padding: 10px 0;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-menu ul li {
-    padding: 10px 15px;
-    text-align: left;
-}
-
-.dropdown-menu ul li a {
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
     color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Navigation menu - hidden by default */
+.nav-menu {
+    display: none;
+    list-style-type: disc;
+    padding-left: 0;
+    width: 200px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #111;
+    padding: 15px 0 15px 40px;
+    border-radius: 5px;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu li {
+    margin: 15px 0;
+}
+
+.nav-menu li a {
+    color: #1E90FF;
     text-decoration: none;
+}
+
+/* Search section */
+.search-section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.search-input {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Location section */
+.location-section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.location-input {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.location-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Sign in section */
+.signin-section {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.signin-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.signin-input {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 15px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.dropdown-menu ul li:hover {
-    background-color: #333;
+.signin-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
-
-/* Show dropdown when active */
-.show-menu {
-    display: block;
-}
-
-/* Responsive Styles */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
-
-    .menu-icon {
-        font-size: 20px;
-    }
-
-    .logo {
-        height: 35px;
-    }
-
-    .dropdown-menu {
-        width: 140px;
-    }
-}
-
 
