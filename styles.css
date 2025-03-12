@@ -61,3 +61,9 @@ input {
 .search-section, .location-section, .signin-section {
     margin-top: 20px;
 }
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Center the logo */
+}
