@@ -7,49 +7,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="menu-container">
-            <!-- Hamburger Menu Icon -->
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <!-- Website Logo -->
-            <img src="logo.jpg" alt="Logo" class="logo">
-        </div>
+   <header>
+    <img src="logo.png" alt="VIRVR" class="logo">
+    <div class="menu-icon">☰</div>
+    <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Groups</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</header>
 
-        <!-- Dropdown Menu -->
-        <nav class="dropdown-menu" id="dropdownMenu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Groups</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="search-section">
+    <input type="text" class="search-input" placeholder="Search...">
+    <button class="search-button">Search</button>
+</div>
 
-    <div class="container">
-        <div class="search-section">
-            <input type="text" placeholder="Search..." class="search-bar">
-            <button class="search-btn">Search</button>
-        </div>
-        
-        <div class="location-section">
-            <input type="text" placeholder="Enter Location..." class="location-input">
-            <button class="location-btn">Set Location</button>
-        </div>
-        
-        <div class="signin-section">
-            <h2>Sign In</h2>
-            <input type="email" placeholder="Email" class="input-field">
-            <input type="password" placeholder="Password" class="input-field">
-            <button class="signin-btn">Sign In</button>
-        </div>
-    </div>
+<div class="location-section">
+    <input type="text" class="location-input" placeholder="Enter Location...">
+    <button class="location-button">Set Location</button>
+</div>
+
+<div class="signin-section">
+    <h2 class="signin-heading">Sign In</h2>
+    <input type="email" class="signin-input" placeholder="Email">
+    <input type="password" class="signin-input" placeholder="Password">
+    <button class="signin-button">Sign In</button>
+</div>
 
     <script>
-        function toggleMenu() {
-            let menu = document.getElementById("dropdownMenu");
-            menu.classList.toggle("show-menu");
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuIcon.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    });
     </script>
 </body>
 </html>
