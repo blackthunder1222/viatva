@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viatva</title>
+    <title>Front Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="logo.jpg" alt="Website Logo" class="logo">
-            <h1>Welcome to Our Website</h1>
+            <div class="menu-logo">
+                <!-- Hamburger Menu Icon -->
+                <div class="menu-icon" onclick="toggleMenu()">
+                    ☰
+                </div>
+                <!-- Website Logo -->
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+
+            <!-- Dropdown Menu -->
+            <nav class="dropdown-menu" id="dropdownMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Groups</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
         </header>
-        
+
         <div class="search-section">
             <input type="text" placeholder="Search..." class="search-bar">
             <button class="search-btn">Search</button>
@@ -30,5 +46,12 @@
             <button class="signin-btn">Sign In</button>
         </div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            let menu = document.getElementById("dropdownMenu");
+            menu.classList.toggle("show-menu");
+        }
+    </script>
 </body>
 </html>
